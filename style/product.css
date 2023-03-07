@@ -3,6 +3,9 @@
     font-family: "Montserrat", "Noto Sans Japanese";
     color: #888;
   }
+  .l-wrap {
+    width: 100%;
+  }
   .l-header__logo {
     text-align: center;
   }
@@ -53,5 +56,46 @@
     -o-object-fit: cover;
     object-fit: cover;
     margin-top: 2vh;
+  }
+  .c-product {
+    padding-top: 10px;
+  }
+  .c-product__tabWrap {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .c-product__tab {
+    width: 10vw;
+    flex-grow: 1;
+    padding: 10px;
+    list-style: none;
+    border: solid 1.5px #cab078;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 8px;
+    white-space: nowrap;
+  }
+  .c-product__tab:hover {
+    background-color: #f8f5ee;
+  }
+  .c-product__panelWrap {
+    height: 100px;
+    border-top: none;
+    background: #fff;
+  }
+  .c-product__panel {
+    display: none;
+  }
+  .c-product__tab.is-active {
+    background: #f8f5ee;
+    color: #888;
+    transition: all 0.2s ease-out;
+  }
+  .c-product__panel.is-show {
+    display: block;
   }
 }/*# sourceMappingURL=product.css.map */
