@@ -42,6 +42,9 @@
     color: #888;
     margin-top: 10px;
   }
+  .l-header__navMenu a.active {
+    color: darkgoldenrod;
+  }
   .l-header .c-border {
     width: 60%;
     margin: 0 auto;
@@ -58,17 +61,14 @@
     margin-top: 2vh;
   }
   .c-product {
-    padding: 40px 80px 100vh 80px;
+    padding: 40px 80px;
     background: #f8f5ee;
     font-size: 10pt;
     line-height: 15pt;
+    display: flex;
   }
   .c-product__tab {
     display: block;
-    float: left;
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
     overflow: hidden;
     width: 20%;
     border-radius: 10px 0 0 10px;
@@ -90,23 +90,22 @@
     color: #fff;
     text-decoration: none;
     padding: 4% 6%;
-    background: -moz-linear-gradient(top, #444, #333);
   }
   .c-product__tab li.active {
     background: #fff;
   }
   .c-product__tab li.active p {
-    color: #000;
+    color: #555;
   }
   .c-product__tabSub {
-    width: 66%;
+    width: 90%;
     margin: 20px auto;
     display: flex;
+    flex-wrap: wrap;
   }
   .c-product__tabSub li {
-    width: 10vw;
-    flex: 1;
-    padding: 10px;
+    width: 8vw;
+    padding: 8px;
     list-style: none;
     border: solid 1.5px #cab078;
     text-align: center;
@@ -114,6 +113,7 @@
     border-radius: 20px;
     margin: 8px;
     white-space: nowrap;
+    font-size: 12px;
   }
   .c-product__tabSub li:hover {
     background-color: #f8f5ee;
@@ -124,10 +124,12 @@
   }
   .c-product__panel {
     display: block;
+    width: 80%;
     background: #fff;
     min-height: 500px;
     padding: 10px 3% 3% 3%;
     border-radius: 0 10px 10px 0;
+    color: #555;
   }
   .c-product__panelInner,
   .c-product__panelInner .c-product__panelItem {
@@ -139,6 +141,6 @@
     display: block;
   }
   .c-product__panelInner .c-product__panelItem.active {
-    display: table;
+    display: block;
   }
 }/*# sourceMappingURL=product.css.map */
