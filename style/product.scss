@@ -133,6 +133,7 @@
       margin: 20px auto;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       & li{
         width: 120px;
         padding:0.5vw;
@@ -162,7 +163,49 @@
       padding: 10px 3% 3% 3%;
       border-radius: 0 10px 10px 0;
       color: #373737;
+      margin: 0 auto;
     }
+
+    &__panelInner{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 80px;
+      justify-content: space-between;
+    }
+
+    &__item{
+      width: 23.5%;
+      margin: 0;
+    }
+
+    &__img{
+      position: relative;
+      padding: 5px;
+      width: 100%;
+      & img{
+        display: block;
+        width: 100%;
+        text-align: center;
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+      }
+    }
+
+    &____description{
+      padding: 0 10px;
+      margin: 0;
+      & p{
+      }
+    }
+
+
+
+
+
+
   }
   .c-product__panelInner,
   .c-product__panelInner .c-product__panelItem{
