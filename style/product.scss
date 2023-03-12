@@ -30,24 +30,28 @@
     }
 
     &__navMenu a{
+      display:block;
       flex-direction: column;
       display: flex;
       color: #1d3124;
       font-weight: 700;
       font-size: 13px;
-      &:hover{
-        color: #e59560;
-      }
       & span{
         font-weight: 100;
         font-size: 12px;
         color: #1d3124;
         margin-top: 10px;
         opacity: 0.8;
+        & .active{
+          color: #e59560;
+        }
       }
-      &.active{
-        color: #e59560;
-      }
+    }
+    & .active{
+      color: #e59560;
+    }
+    & .c-hover:hover{
+      color: #e59560;
     }
     & .c-border{
       width: 60%;
@@ -97,6 +101,11 @@
         color: #f6f4e8;
         text-decoration: none;
         padding: 4% 6%;
+        &:hover {
+          letter-spacing: 0.15em;
+          font-weight :bold;
+          transition: 0.5s ;
+        }
       }
       &::after{
         position: absolute;

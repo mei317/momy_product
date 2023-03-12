@@ -28,14 +28,12 @@ body {
   margin-left: 0px;
 }
 .l-header__navMenu a {
+  display: block;
   flex-direction: column;
   display: flex;
   color: #1d3124;
   font-weight: 700;
   font-size: 13px;
-}
-.l-header__navMenu a:hover {
-  color: #e59560;
 }
 .l-header__navMenu a span {
   font-weight: 100;
@@ -44,7 +42,13 @@ body {
   margin-top: 10px;
   opacity: 0.8;
 }
-.l-header__navMenu a.active {
+.l-header__navMenu a span .active {
+  color: #e59560;
+}
+.l-header .active {
+  color: #e59560;
+}
+.l-header .c-hover:hover {
   color: #e59560;
 }
 .l-header .c-border {
@@ -95,6 +99,11 @@ body {
   color: #f6f4e8;
   text-decoration: none;
   padding: 4% 6%;
+}
+.c-product__tab li p:hover {
+  letter-spacing: 0.15em;
+  font-weight: bold;
+  transition: 0.5s;
 }
 .c-product__tab li::after {
   position: absolute;
