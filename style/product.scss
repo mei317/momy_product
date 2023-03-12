@@ -1,4 +1,4 @@
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 450px) {
   body{
     font-family: 'Montserrat',"Noto Sans Japanese";
     color: #888;
@@ -64,15 +64,54 @@
   // タブ切替
   .c-product{
     padding-top: 10px;
-  }
-  .c-product__tabWrap{
-    width: 60%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
   }
+  // .c-product__tabWrap{
+  //   width: 60%;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   margin: 0 auto;
+  // }
+
+  // .c-product__panelWrap{
+  //   height:100px;
+  //   // border:solid 0.5px #888;
+  //   border-top:none;
+  //   background:#fff;
+  // }
+
+  // .c-product__tab.is-active{
+  //   background:#f8f5ee;
+  //   color:#888;
+  //   transition: all 0.2s ease-out;
+  // }
+
+
   .c-product__tab{
+    list-style:none;
+    padding:0;
+    margin: 20px;
+    width: 30vw;
+  }
+  .c-product__tab li{
+      background: #f8c6c6;
+      margin-right:5px;
+      border:1px solid #dfdfdf;
+      text-align: center;
+      padding:10px 0;
+  }
+  .c-product__tab li.active{
+      background:#f79b9b;
+  }
+  /* ページャー */
+  .c-product__tabSub{
+      margin:20px auto;
+      padding:0;
+      list-style:none;
+      display: flex;
+  }
+  .c-product__tabSub li{
     width: 10vw;
     flex-grow: 1;
     padding:10px;
@@ -87,22 +126,19 @@
       background-color: #f8f5ee;
     }
   }
-  .c-product__panelWrap{
-    height:100px;
-    // border:solid 0.5px #888;
-    border-top:none;
-    background:#fff;
+  .c-product__tabSub li.active{
+      background:#f8f5ee;
   }
-  .c-product__panel{
-    display:none;
+
+  .c-product__panel .c-product__panelInner,
+  .c-product__panel .c-product__panelInner .c-product__panelItem{
+      display:none;
   }
-  .c-product__tab.is-active{
-    background:#f8f5ee;
-    color:#888;
-    transition: all 0.2s ease-out;
+  .c-product__panel .c-product__panelInner.active{
+      display:block;
   }
-  .c-product__panel.is-show{
-    display:block;
+  .c-product__panel .c-product__panelInner .c-product__panelItem.active{
+      display:table;
   }
 
 }
