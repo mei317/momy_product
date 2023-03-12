@@ -58,8 +58,7 @@
     margin-top: 2vh;
   }
   .c-product {
-    margin: 0;
-    padding: 80px;
+    padding: 40px 80px 100vh 80px;
     background: #f8f5ee;
     font-size: 10pt;
     line-height: 15pt;
@@ -73,10 +72,10 @@
     overflow: hidden;
     width: 20%;
     border-radius: 10px 0 0 10px;
-    background: #555;
+    background: #888;
   }
   .c-product__tab li {
-    border-bottom: 1px solid #000;
+    border-bottom: 1.5px solid #666;
     margin-bottom: 1px;
     text-align: left;
     padding: 0px;
@@ -87,10 +86,10 @@
   }
   .c-product__tab li p {
     display: block;
-    font-size: 14pt;
+    font-size: 12pt;
     color: #fff;
     text-decoration: none;
-    padding: 3%;
+    padding: 4% 6%;
     background: -moz-linear-gradient(top, #444, #333);
   }
   .c-product__tab li.active {
@@ -100,14 +99,13 @@
     color: #000;
   }
   .c-product__tabSub {
+    width: 66%;
     margin: 20px auto;
-    padding: 0;
-    list-style: none;
     display: flex;
   }
   .c-product__tabSub li {
     width: 10vw;
-    flex-grow: 1;
+    flex: 1;
     padding: 10px;
     list-style: none;
     border: solid 1.5px #cab078;
