@@ -1,6 +1,7 @@
-@media screen and (min-width: 450px) {
+
   body{
     font-family: 'Montserrat',"Noto Sans Japanese";
+    min-width: 1360px;
   }
   .l-wrap{
     width: 100%;
@@ -124,27 +125,27 @@
     }
 
     &__tabSub{
-      width: 90%;
+      width: 100%;
       margin: 20px auto;
       display: flex;
       flex-wrap: wrap;
       & li{
-        width: 8vw;
-        padding:8px;
-        list-style:none;
-        border:solid 1.5px #cab078;
-        text-align:center;
+        width: 120px;
+        padding:0.5vw;
+        border:solid 1.5px #1d3124;
         cursor:pointer;
         border-radius: 20px;
         margin: 8px;
-        white-space: nowrap;
         font-size: 12px;
+        white-space: nowrap;
+        text-align:center;
         &:hover{
-          background-color: #dcd0c0;
+          background: #bacec1;
         }
         &.active{
-          background:#dcd0c0;
+          background-color:#1d3124;
           transition: all 0.2s ease-out;
+          color: #fff;
         }
       }
     }
@@ -171,4 +172,3 @@
   .c-product__panelInner .c-product__panelItem.active{
       display:block;
   }
-}
