@@ -1,7 +1,6 @@
 @media screen and (min-width: 450px) {
   body{
     font-family: 'Montserrat',"Noto Sans Japanese";
-    color: #888;
   }
   .l-wrap{
     width: 100%;
@@ -32,20 +31,20 @@
     &__navMenu a{
       flex-direction: column;
       display: flex;
-      color: #555;
+      color: #373737;
       font-weight: 700;
       font-size: 13px;
       &:hover{
-        color: #FCB2A9;
+        color: #e59560;
       }
       & span{
         font-weight: 100;
         font-size: 12px;
-        color: #888;
+        color: #cdcdcd;
         margin-top: 10px;
       }
       &.active{
-        color: darkgoldenrod;
+        color: #e59560;
       }
     }
     & .c-border{
@@ -68,7 +67,7 @@
   // タブ切替
   .c-product{
     padding: 40px 80px;
-    background: #f8f5ee;
+    background: #f6f4e8;
     font-size: 10pt;
     line-height: 15pt;
     display: flex;
@@ -97,11 +96,11 @@
       overflow: hidden;
       width: 20%;
       border-radius: 10px 0 0 10px;
-      background: #888;
+      background: #bacec1;
     }
 
     &__tab li{
-      border-bottom: 1.5px solid #666;
+      border-bottom: 1.5px dotted #1d3124;
       margin-bottom: 1px;
       text-align: left;
       padding: 0px;
@@ -112,14 +111,14 @@
       & p{
         display: block;
         font-size: 12pt;
-        color: #fff;
+        color: #f6f4e8;
         text-decoration: none;
         padding: 4% 6%;
       }
       &.active{
         background: #fff;
         & p{
-          color: #555;
+          color: #1d3124;
         }
       }
     }
@@ -141,10 +140,10 @@
         white-space: nowrap;
         font-size: 12px;
         &:hover{
-          background-color: #f8f5ee;
+          background-color: #dcd0c0;
         }
         &.active{
-          background:#f8f5ee;
+          background:#dcd0c0;
           transition: all 0.2s ease-out;
         }
       }
@@ -157,14 +156,14 @@
       min-height: 500px;
       padding: 10px 3% 3% 3%;
       border-radius: 0 10px 10px 0;
-      color: #555;
+      color: #373737;
     }
   }
   .c-product__panelInner,
   .c-product__panelInner .c-product__panelItem{
       display:none;
       margin: 0px;
-      color: #555;
+      color: #373737;
   }
   .c-product__panelInner.active{
       display:block;
