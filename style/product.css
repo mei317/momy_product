@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @media screen and (min-width: 450px) {
   body {
     font-family: "Montserrat", "Noto Sans Japanese";
@@ -59,26 +58,47 @@
     margin-top: 2vh;
   }
   .c-product {
-    padding-top: 10px;
-    display: flex;
+    margin: 0;
+    padding: 80px;
+    background: #f8f5ee;
+    font-size: 10pt;
+    line-height: 15pt;
   }
   .c-product__tab {
+    display: block;
+    float: left;
+    margin: 0px;
+    padding: 0px;
     list-style: none;
-    padding: 0;
-    margin: 20px;
-    width: 30vw;
+    overflow: hidden;
+    width: 20%;
+    border-radius: 10px 0 0 10px;
+    background: #555;
   }
   .c-product__tab li {
-    background: #f8c6c6;
-    margin-right: 5px;
-    border: 1px solid #dfdfdf;
-    text-align: center;
-    padding: 10px 0;
+    border-bottom: 1px solid #000;
+    margin-bottom: 1px;
+    text-align: left;
+    padding: 0px;
+  }
+  .c-product__tab li:last-child {
+    margin-bottom: 0px;
+    border-bottom: 0px;
+  }
+  .c-product__tab li p {
+    display: block;
+    font-size: 14pt;
+    color: #fff;
+    text-decoration: none;
+    padding: 3%;
+    background: -moz-linear-gradient(top, #444, #333);
   }
   .c-product__tab li.active {
-    background: #f79b9b;
+    background: #fff;
   }
-  /* ページャー */
+  .c-product__tab li.active p {
+    color: #000;
+  }
   .c-product__tabSub {
     margin: 20px auto;
     padding: 0;
@@ -102,15 +122,25 @@
   }
   .c-product__tabSub li.active {
     background: #f8f5ee;
+    transition: all 0.2s ease-out;
   }
-  .c-product__panel .c-product__panelInner,
-  .c-product__panel .c-product__panelInner .c-product__panelItem {
+  .c-product__panel {
+    display: block;
+    background: #fff;
+    min-height: 500px;
+    padding: 10px 3% 3% 3%;
+    border-radius: 0 10px 10px 0;
+  }
+  .c-product__panelInner,
+  .c-product__panelInner .c-product__panelItem {
     display: none;
+    margin: 0px;
+    color: #555;
   }
-  .c-product__panel .c-product__panelInner.active {
+  .c-product__panelInner.active {
     display: block;
   }
-  .c-product__panel .c-product__panelInner .c-product__panelItem.active {
+  .c-product__panelInner .c-product__panelItem.active {
     display: table;
   }
 }/*# sourceMappingURL=product.css.map */

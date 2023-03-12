@@ -63,9 +63,11 @@
 
   // タブ切替
   .c-product{
-    padding-top: 10px;
-    display: flex;
-  }
+    margin: 0;
+    padding: 80px;
+    background: #f8f5ee;
+    font-size: 10pt;
+    line-height: 15pt;
   // .c-product__tabWrap{
   //   width: 60%;
   //   display: flex;
@@ -86,59 +88,89 @@
   //   color:#888;
   //   transition: all 0.2s ease-out;
   // }
+    &__tab{
+      display: block;
+      float: left;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      overflow: hidden;
+      width: 20%;
+      border-radius: 10px 0 0 10px;
+      background: #555;
+    }
 
+    &__tab li{
+      border-bottom: 1px solid #000;
+      margin-bottom: 1px;
+      text-align: left;
+      padding: 0px;
+      &:last-child{
+        margin-bottom: 0px;
+        border-bottom: 0px;
+      }
+      & p{
+        display: block;
+        font-size: 14pt;
+        color: #fff;
+        text-decoration: none;
+        padding: 3%;
 
-  .c-product__tab{
-    list-style:none;
-    padding:0;
-    margin: 20px;
-    width: 30vw;
-  }
-  .c-product__tab li{
-      background: #f8c6c6;
-      margin-right:5px;
-      border:1px solid #dfdfdf;
-      text-align: center;
-      padding:10px 0;
-  }
-  .c-product__tab li.active{
-      background:#f79b9b;
-  }
-  /* ページャー */
-  .c-product__tabSub{
+        background: -webkit-linear-gradient(top,#444,#333);
+        background: -moz-linear-gradient(top,#444,#333);
+      }
+      &.active{
+        background: #fff;
+        & p{
+          color: #000;
+        }
+      }
+    }
+
+    &__tabSub{
       margin:20px auto;
       padding:0;
       list-style:none;
       display: flex;
-  }
-  .c-product__tabSub li{
-    width: 10vw;
-    flex-grow: 1;
-    padding:10px;
-    list-style:none;
-    border:solid 1.5px #cab078;
-    text-align:center;
-    cursor:pointer;
-    border-radius: 20px;
-    margin: 8px;
-    white-space: nowrap;
-    &:hover{
-      background-color: #f8f5ee;
+      & li{
+        width: 10vw;
+        flex-grow: 1;
+        padding:10px;
+        list-style:none;
+        border:solid 1.5px #cab078;
+        text-align:center;
+        cursor:pointer;
+        border-radius: 20px;
+        margin: 8px;
+        white-space: nowrap;
+        &:hover{
+          background-color: #f8f5ee;
+        }
+        &.active{
+          background:#f8f5ee;
+          transition: all 0.2s ease-out;
+        }
+      }
+    }
+
+    &__panel{
+      display: block;
+      background: #fff;
+      min-height: 500px;
+      padding: 10px 3% 3% 3%;
+      border-radius: 0 10px 10px 0;
     }
   }
-  .c-product__tabSub li.active{
-      background:#f8f5ee;
-  }
-
-  .c-product__panel .c-product__panelInner,
-  .c-product__panel .c-product__panelInner .c-product__panelItem{
+  .c-product__panelInner,
+  .c-product__panelInner .c-product__panelItem{
       display:none;
+      margin: 0px;
+      color: #555;
   }
-  .c-product__panel .c-product__panelInner.active{
+  .c-product__panelInner.active{
       display:block;
   }
-  .c-product__panel .c-product__panelInner .c-product__panelItem.active{
+  .c-product__panelInner .c-product__panelItem.active{
       display:table;
   }
-
 }
