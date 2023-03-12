@@ -30,7 +30,7 @@ body {
 .l-header__navMenu a {
   flex-direction: column;
   display: flex;
-  color: #373737;
+  color: #1d3124;
   font-weight: 700;
   font-size: 13px;
 }
@@ -40,8 +40,9 @@ body {
 .l-header__navMenu a span {
   font-weight: 100;
   font-size: 12px;
-  color: #cdcdcd;
+  color: #1d3124;
   margin-top: 10px;
+  opacity: 0.8;
 }
 .l-header__navMenu a.active {
   color: #e59560;
@@ -63,6 +64,7 @@ body {
 }
 
 .c-product {
+  width: 100%;
   padding: 40px 80px;
   background: #f6f4e8;
   font-size: 10pt;
@@ -77,6 +79,7 @@ body {
   background: #bacec1;
 }
 .c-product__tab li {
+  position: relative;
   border-bottom: 1.5px dotted #1d3124;
   margin-bottom: 1px;
   text-align: left;
@@ -93,10 +96,23 @@ body {
   text-decoration: none;
   padding: 4% 6%;
 }
+.c-product__tab li::after {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 4%;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f054";
+  color: #f6f4e8;
+}
 .c-product__tab li.active {
   background: #fff;
 }
 .c-product__tab li.active p {
+  color: #1d3124;
+}
+.c-product__tab li.active::after {
   color: #1d3124;
 }
 .c-product__tabSub {
