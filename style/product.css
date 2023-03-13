@@ -197,15 +197,13 @@ body {
 .c-product__descriptionText {
   background-color: #fff;
 }
-
-.c-product__panelInner,
-.c-product__panelInner .c-product__panelItem {
+.c-product .c-product__panelInner,
+.c-product .c-product__panelInner .c-product__panelItem {
   display: none;
   margin: 0px;
   color: #373737;
 }
-
-.c-product__panelInner .c-product__panelItem.active {
+.c-product .c-product__panelInner .c-product__panelItem.active {
   display: block;
   display: flex;
   flex-wrap: wrap;
